@@ -9,7 +9,6 @@ import CurrencyRupee from "@mui/icons-material/CurrencyRupee";
 import { useSelector } from "react-redux";
 import StripeCheckout from "react-stripe-checkout";
 import { useState } from "react";
-import Stripe from "stripe";
 import { useEffect } from "react";
 import { userRequest } from "./API";
 import { useNavigate } from "react-router-dom";
