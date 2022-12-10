@@ -16,7 +16,7 @@ const Products = ({cat, filters, sort}) => {
     useEffect(() => {
         const getProducts = async () => {
             try {
-                const res = await axios.get(cat ? `e-server-qpnf2t8qu-sandhyalavuri07-gmailcom.vercel.app/products?category=${cat}` : "e-server-qpnf2t8qu-sandhyalavuri07-gmailcom.vercel.app/products/");
+                const res = await axios.get(cat ? `https://e-server.vercel.app/products?category=${cat}` : "https://e-server.vercel.app/products/");
                 setProducts(res.data);
             } catch (err) {}
         };
@@ -38,7 +38,7 @@ const Products = ({cat, filters, sort}) => {
         }
     }, [sort]);
 
-    console.log(products, "PRODUCTS");
+    console.log(products, "PRODUCTSsssss");
     return (<Container> {
         cat ? filteredProducts.map((item) => <Product item={item}
             key={
