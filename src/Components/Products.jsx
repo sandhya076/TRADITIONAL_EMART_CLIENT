@@ -16,7 +16,7 @@ const Products = ({cat, filters, sort}) => {
     useEffect(() => {
         const getProducts = async () => {
             try {
-                const res = await axios.get(cat ? `https://server-emart1.herokuapp.com/products?category=${cat}` : "https://server-emart1.herokuapp.com/products/");
+                const res = await axios.get(cat ? `e-server-qpnf2t8qu-sandhyalavuri07-gmailcom.vercel.app/products?category=${cat}` : "e-server-qpnf2t8qu-sandhyalavuri07-gmailcom.vercel.app/products/");
                 setProducts(res.data);
             } catch (err) {}
         };
